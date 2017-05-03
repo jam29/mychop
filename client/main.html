@@ -1,0 +1,22 @@
+<head>
+  <title>Hello</title>
+</head>
+
+<body>
+  <h1>SHOP IN A HURRY!</h1>
+{{> timeDisplay}}
+{{> news }}
+</body>
+
+<template name="timeDisplay">
+  {{ currentTime }}
+</template>
+
+<template name="news">
+  <h3>News</h3>
+  <ul>
+    {{ #each news }}
+      <li>{{title}}</li>
+    {{/each}}
+  </ul>
+</template>
